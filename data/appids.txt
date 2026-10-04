@@ -1,0 +1,8 @@
+# Steam app ids of the large-scale tactical shooters Shooter Atlas documents.
+# One per line: appid<TAB>game. Use with tools/steam-current-players.mjs
+1867240	WARDOGS
+393380	Squad
+505460	Foxhole
+686810	Hell Let Loose
+1874880	Arma Reforger
+418460	Rising Storm 2: Vietnam

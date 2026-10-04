@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "game": "WARDOGS",
+    "steamAppId": "1867240",
+    "page": "/wardogs-map",
+    "readOn": "2026-10-03",
+    "ownerNote": "This is the only file the map page reads. It is read at build time by src/pages/wardogs-map.mjs and also served as-is at /assets/data/wardogs-map-points.json. Add a location by copying the shape of `template` into `points`. Never guess: if a position has not been read, leave x and y as null and the page will print the row as 'position not read yet' instead of plotting it.",
+    "fieldNote": "x and y are kilometres. x counts east from the west edge, y counts south from the north edge, so both run 0-16 on every map. gridRef is the lettered 1 km cell: columns A-P west to east, rows 1-16 north to south.",
+    "template": {
+      "id": "bakurani-example-01",
+      "name": "Name exactly as the game prints it",
+      "type": "tower",
+      "map": "bakurani",
+      "x": null,
+      "y": null,
+      "note": "What it is, in one line. Leave out anything you did not read.",
+      "source": {
+        "label": "Where you read it",
+        "url": "https://example.com/page-you-read",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "ingame"
+    },
+    "confidenceValues": [
+      "official - printed by Bulkhead, Team17 or Valve",
+      "ingame - read off a screen in the game",
+      "third-party - a page outside the studio that we read and can link",
+      "our-reading - arithmetic or a convention we chose, said out loud"
+    ]
+  },
+  "grid": {
+    "maps": 3,
+    "sizeKm": 16,
+    "cellsPerSide": 16,
+    "cellKm": 1,
+    "columns": "A-P",
+    "rows": "1-16",
+    "rowDirection": "rows are numbered down the map, 1 at the north edge",
+    "source": {
+      "label": "Community map projects that print the same 1 km lettered grid",
+      "url": "https://wardogshub.gg/map/",
+      "readOn": "2026-10-03"
+    },
+    "sizeSource": {
+      "label": "Steam store page: 'a randomised 2x2km Control Zone within a 256km\u00b2 map'",
+      "url": "https://store.steampowered.com/app/1867240/WARDOGS/",
+      "readOn": "2026-10-03"
+    }
+  },
+  "maps": [
+    {
+      "id": "bakurani",
+      "name": "Bakurani",
+      "sizeKm": 16,
+      "readOn": "2026-10-03",
+      "summary": "River valley. A town on the valley floor, forested ridges either side, one sustained road across it.",
+      "confidence": "third-party",
+      "source": {
+        "label": "wardogshub.gg interactive maps, three maps of 256 km2 named Bakurani, Ozeti and Zestafona",
+        "url": "https://wardogshub.gg/map/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "ozeti",
+      "name": "Ozeti",
+      "sizeKm": 16,
+      "readOn": "2026-10-03",
+      "summary": "Hill town. Low buildings along one road, a walled stadium, a church on the high ground, orchard and dry fields around it.",
+      "confidence": "third-party",
+      "source": {
+        "label": "wardogshub.gg interactive maps",
+        "url": "https://wardogshub.gg/map/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "zestafona",
+      "name": "Zestafona",
+      "sizeKm": 16,
+      "readOn": "2026-10-03",
+      "summary": "Arid high country. Irrigated field blocks along a creek, scattered settlement, bare rock and low scrub on the ridges.",
+      "confidence": "third-party",
+      "source": {
+        "label": "wardogshub.gg interactive maps",
+        "url": "https://wardogshub.gg/map/",
+        "readOn": "2026-10-03"
+      }
+    }
+  ],
+  "types": [
+    {
+      "id": "tower",
+      "name": "Towers",
+      "colour": "#f0a92c",
+      "recorded": false,
+      "source": {
+        "label": "Official mechanic; the tower and terminal screens read in game on 28 September 2026, and the PCGamesN guide Valve's news feed carries",
+        "url": "https://www.pcgamesn.com/wardogs/capture-wardogs-towers",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "spawn",
+      "name": "Spawn points",
+      "colour": "#8fb8ff",
+      "recorded": false,
+      "source": {
+        "label": "Category tracked by the community map projects (positions not read yet)",
+        "url": "https://wardogstools.org/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "safe",
+      "name": "Safe areas",
+      "colour": "#4ec9a0",
+      "recorded": false,
+      "source": {
+        "label": "Category tracked by the community map projects (positions not read yet)",
+        "url": "https://wardogstools.org/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "deploy",
+      "name": "Deployment boards",
+      "colour": "#c9a0ff",
+      "recorded": false,
+      "source": {
+        "label": "Category tracked by the community map projects (positions not read yet)",
+        "url": "https://wardogstools.org/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "vendor",
+      "name": "Vendors",
+      "colour": "#ffb3b3",
+      "recorded": false,
+      "source": {
+        "label": "Category tracked by the community map projects (positions not read yet)",
+        "url": "https://wardogstools.org/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "garage",
+      "name": "Garages",
+      "colour": "#9fe0ff",
+      "recorded": false,
+      "source": {
+        "label": "Category tracked by the community map projects (positions not read yet)",
+        "url": "https://wardogstools.org/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "fuel",
+      "name": "Fuel points",
+      "colour": "#ffd166",
+      "recorded": false,
+      "source": {
+        "label": "Category tracked by the community map projects (positions not read yet)",
+        "url": "https://wardogstools.org/",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "ladder",
+      "name": "Ladders",
+      "colour": "#b8c4d0",
+      "recorded": false,
+      "source": {
+        "label": "Category tracked by the community map projects (positions not read yet)",
+        "url": "https://wardogstools.org/",
+        "readOn": "2026-10-03"
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "control-zone",
+      "name": "Control Zone",
+      "sizeKm": [2, 2],
+      "areaKm2": 4,
+      "placed": false,
+      "note": "2 x 2 km, randomised somewhere inside the 256 km2 map every match, so it has no fixed position. Drag the square to where your match put it.",
+      "confidence": "official",
+      "source": {
+        "label": "Bulkhead, WARDOGS - TOP QUESTIONS, Steam news, 18 February 2026",
+        "url": "https://store.steampowered.com/news/app/1867240",
+        "readOn": "2026-10-03"
+      }
+    },
+    {
+      "id": "hot-zone",
+      "name": "Hot Zone",
+      "sizeKm": [null, null],
+      "areaKm2": null,
+      "placed": false,
+      "note": "A shifting sub-zone inside the Control Zone. Players inside count double and earn double cash. No diameter has been published, so none is printed here.",
+      "confidence": "official",
+      "source": {
+        "label": "Bulkhead, WARDOGS - TOP QUESTIONS, Steam news, 18 February 2026",
+        "url": "https://store.steampowered.com/news/app/1867240",
+        "readOn": "2026-10-03"
+      }
+    }
+  ],
+  "points": [
+    {
+      "id": "bakurani-tower-1",
+      "name": "Tower 1",
+      "type": "tower",
+      "map": "bakurani",
+      "x": 7.9,
+      "y": 9.2,
+      "note": "One of the five towers the community projects place on Bakurani. Four projects put it within 0.01 km of this point.",
+      "source": {
+        "label": "Four projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT), wardogslabs.com and wardogshub.gg",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/bakurani.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "bakurani-tower-2",
+      "name": "Tower 2",
+      "type": "tower",
+      "map": "bakurani",
+      "x": 7.5,
+      "y": 9.2,
+      "note": "One of the five towers the community projects place on Bakurani. Four projects put it within 0.01 km of this point.",
+      "source": {
+        "label": "Four projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT), wardogslabs.com and wardogshub.gg",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/bakurani.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "bakurani-tower-3",
+      "name": "Tower 3",
+      "type": "tower",
+      "map": "bakurani",
+      "x": 7.5,
+      "y": 8.8,
+      "note": "One of the five towers the community projects place on Bakurani. Four projects put it within 0.01 km of this point.",
+      "source": {
+        "label": "Four projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT), wardogslabs.com and wardogshub.gg",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/bakurani.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "bakurani-tower-4",
+      "name": "Tower 4",
+      "type": "tower",
+      "map": "bakurani",
+      "x": 8.2,
+      "y": 8.9,
+      "note": "One of the five towers the community projects place on Bakurani. Four projects put it within 0.01 km of this point.",
+      "source": {
+        "label": "Four projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT), wardogslabs.com and wardogshub.gg",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/bakurani.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "bakurani-tower-5",
+      "name": "Tower 5",
+      "type": "tower",
+      "map": "bakurani",
+      "x": 8.0,
+      "y": 9.3,
+      "note": "One of the five towers the community projects place on Bakurani. Four projects put it within 0.01 km of this point. One of them prints this one as TOWER 5L and marks it as a variant rather than a core tower; the position is the same.",
+      "source": {
+        "label": "Four projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT), wardogslabs.com and wardogshub.gg",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/bakurani.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "ozeti-tower-1",
+      "name": "Tower 1",
+      "type": "tower",
+      "map": "ozeti",
+      "x": 9.4,
+      "y": 9.9,
+      "note": "One of the four towers on Ozeti. Three projects put it within 0.02 km of this point; a fourth places it about 0.22 km south-east, and that disagreement is listed in towersCrossCheck.todoConflicts.",
+      "source": {
+        "label": "Three projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT) and wardogslabs.com",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/ozeti.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "ozeti-tower-2",
+      "name": "Tower 2",
+      "type": "tower",
+      "map": "ozeti",
+      "x": 9.8,
+      "y": 10.2,
+      "note": "One of the four towers on Ozeti. Three projects put it within 0.01 km of this point; a fourth places it about 0.22 km south-east, and that disagreement is listed in towersCrossCheck.todoConflicts.",
+      "source": {
+        "label": "Three projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT) and wardogslabs.com",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/ozeti.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "ozeti-tower-3",
+      "name": "Tower 3",
+      "type": "tower",
+      "map": "ozeti",
+      "x": 10.2,
+      "y": 9.8,
+      "note": "One of the four towers on Ozeti. Three projects put it within 0.01 km of this point; a fourth places it about 0.22 km south-east, and that disagreement is listed in towersCrossCheck.todoConflicts.",
+      "source": {
+        "label": "Three projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT) and wardogslabs.com",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/ozeti.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "ozeti-tower-4",
+      "name": "Tower 4",
+      "type": "tower",
+      "map": "ozeti",
+      "x": 9.8,
+      "y": 9.4,
+      "note": "One of the four towers on Ozeti. Three projects put it within 0.02 km of this point; a fourth places it about 0.22 km south-east, and that disagreement is listed in towersCrossCheck.todoConflicts.",
+      "source": {
+        "label": "Three projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT) and wardogslabs.com",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/ozeti.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "zestafona-tower-1",
+      "name": "Tower 1",
+      "type": "tower",
+      "map": "zestafona",
+      "x": 6.7,
+      "y": 5.8,
+      "note": "One of the three towers on Zestafona. Three projects put it within 0.03 km of this point.",
+      "source": {
+        "label": "Three projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT) and wardogslabs.com",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/zestafona.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "zestafona-tower-2",
+      "name": "Tower 2",
+      "type": "tower",
+      "map": "zestafona",
+      "x": 7.1,
+      "y": 5.7,
+      "note": "One of the three towers on Zestafona. Three projects put it within 0.02 km of this point.",
+      "source": {
+        "label": "Three projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT) and wardogslabs.com",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/zestafona.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    },
+    {
+      "id": "zestafona-tower-3",
+      "name": "Tower 3",
+      "type": "tower",
+      "map": "zestafona",
+      "x": 6.8,
+      "y": 6.2,
+      "note": "One of the three towers on Zestafona. Three projects put it within 0.02 km of this point.",
+      "source": {
+        "label": "Three projects agree: wardogs.tools map plan, apollyon-sys/wardogs-calculator (MIT) and wardogslabs.com",
+        "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/zestafona.json",
+        "readOn": "2026-10-03"
+      },
+      "confidence": "third-party"
+    }
+  ],
+  "towersCrossCheck": {
+    "readOn": "2026-10-03",
+    "rule": "A tower position is written into points only where at least two projects agree. Anything with a single source, and anything where two projects disagree, is listed below instead of being written into points.",
+    "caveat": "Counting projects is counting publications, not necessarily separate measurements. Three of the four agree to within 23 metres, which is tighter than separate surveys of the same ground usually land, so several of them are probably working from one upstream calibration - most likely the game's own files. None of the four says so, and this file cannot prove it either way. Treat the source count as the number of places the position is written down, not as four witnesses.",
+    "how": "Every project's position was converted to this file's kilometres: fraction of the map x 16 km, x counted from the west edge and y from the north edge. apollyon-sys/wardogs-calculator stores game coordinates with y running north (its js/map/map-view.js worldToLocalScreen reads y as bounds.maxY - y), so its y was flipped first. The community projects treat the map they draw as 16 km across; the calculator's own tiles are 16384 px, which it also labels 16.384 km, so a position can sit about 0.2 km further out on a 1:1 reading - see notYetRecorded.",
+    "sources": [
+      { "id": "S1", "name": "wardogs.tools/map", "url": "https://wardogs.tools/map", "how": "Tower squares read out of the plan SVG the page serves (1000-unit tiles)." },
+      { "id": "S2", "name": "apollyon-sys/wardogs-calculator, MIT", "url": "https://github.com/apollyon-sys/wardogs-calculator/blob/HEAD/maps/bakurani.json", "how": "Markers with icon tower in maps/<map>.json, in tile pixels of a 16384 px map." },
+      { "id": "S3", "name": "wardogslabs.com/maps", "url": "https://wardogslabs.com/maps", "how": "towers[] in its page bundle, percent left/top; checked against the rendered markers in a browser." },
+      { "id": "S4", "name": "wardogshub.gg map explorer", "url": "https://wardogshub.gg/map/bakurani/", "how": "Its own data-tactical JSON. Bakurani and Ozeti only: the hub publishes no Zestafona page." }
+    ],
+    "agreeing": [
+      { "map": "bakurani", "towers": 5, "sources": ["S1", "S2", "S3", "S4"], "maxSpreadKm": 0.007 },
+      { "map": "ozeti", "towers": 4, "sources": ["S1", "S2", "S3"], "maxSpreadKm": 0.014, "fourthSourceApart": "0.22 km south-east" },
+      { "map": "zestafona", "towers": 3, "sources": ["S1", "S2", "S3"], "maxSpreadKm": 0.023 }
+    ],
+    "todoSingleSource": [
+      { "map": "bakurani", "name": "Abandoned TWR 1", "x": 7.1, "y": 11.0, "where": "wardogshub.gg/map/bakurani/ place list - no other project publishes this name", "readOn": "2026-10-03" },
+      { "map": "bakurani", "name": "Abandoned TWR 2", "x": 7.6, "y": 11.6, "where": "wardogshub.gg/map/bakurani/ place list - no other project publishes this name", "readOn": "2026-10-03" },
+      { "map": "bakurani", "name": "Abandoned TWR 3", "x": 7.7, "y": 10.2, "where": "wardogshub.gg/map/bakurani/ place list - no other project publishes this name", "readOn": "2026-10-03" },
+      { "map": "bakurani", "name": "Abandoned TWR 4", "x": 8.6, "y": 10.6, "where": "wardogshub.gg/map/bakurani/ place list - no other project publishes this name", "readOn": "2026-10-03" },
+      { "map": "bakurani", "name": "Sunflowers Tower", "x": 8.3, "y": 11.1, "where": "wardogshub.gg/map/bakurani/ place list - no other project publishes this name", "readOn": "2026-10-03" },
+      { "map": "bakurani", "name": "Valley Tower 7", "x": 8.4, "y": 10.6, "where": "wardogshub.gg/map/bakurani/ place list - the agreed tower set has no seventh tower", "readOn": "2026-10-03" },
+      { "map": "zestafona", "name": "Water Tower 1", "x": 6.8, "y": 6.3, "where": "wardogstools.org dataset, which attributes its list to the WARDOGS Hub map explorer; the hub publishes no Zestafona page", "readOn": "2026-10-03" },
+      { "map": "zestafona", "name": "Water Tower 2", "x": 6.9, "y": 6.4, "where": "wardogstools.org dataset, which attributes its list to the WARDOGS Hub map explorer; the hub publishes no Zestafona page", "readOn": "2026-10-03" }
+    ],
+    "todoConflicts": [
+      { "map": "ozeti", "name": "Tower 1", "written": "9.4, 9.9 km (S1, S2, S3)", "otherSide": "9.51, 10.02 km (S4, wardogshub.gg/map/europe/)", "apartKm": 0.23 },
+      { "map": "ozeti", "name": "Tower 2", "written": "9.8, 10.2 km (S1, S2, S3)", "otherSide": "9.96, 10.37 km (S4, wardogshub.gg/map/europe/)", "apartKm": 0.22 },
+      { "map": "ozeti", "name": "Tower 3", "written": "10.2, 9.8 km (S1, S2, S3)", "otherSide": "10.36, 9.94 km (S4, wardogshub.gg/map/europe/)", "apartKm": 0.22 },
+      { "map": "ozeti", "name": "Tower 4", "written": "9.8, 9.4 km (S1, S2, S3)", "otherSide": "9.98, 9.55 km (S4, wardogshub.gg/map/europe/)", "apartKm": 0.22 },
+      { "map": "bakurani", "name": "Valley Tower 1", "written": "S4's own place list puts it at 7.90, 10.78 km; S4's own tower layer puts Tower 1 at 7.86, 9.18 km", "otherSide": "the tower set the four projects agree on is 7.9, 9.2 km", "apartKm": 1.6 },
+      { "map": "bakurani", "name": "Valley Tower 2", "written": "S4 place list 7.59, 10.80 km; S4 tower layer 7.54, 9.17 km", "otherSide": "agreed tower set 7.5, 9.2 km", "apartKm": 1.6 },
+      { "map": "bakurani", "name": "Valley Tower 3", "written": "S4 place list 7.58, 11.11 km; S4 tower layer 7.54, 8.83 km", "otherSide": "agreed tower set 7.5, 8.8 km", "apartKm": 2.3 },
+      { "map": "bakurani", "name": "Valley Tower 4", "written": "S4 place list 8.20, 11.08 km; S4 tower layer 8.17, 8.89 km", "otherSide": "agreed tower set 8.2, 8.9 km", "apartKm": 2.2 },
+      { "map": "bakurani", "name": "Valley Tower 5 L", "written": "S4 place list 8.07, 10.56 km; S4 tower layer 8.03, 9.32 km", "otherSide": "agreed tower set 8.0, 9.3 km", "apartKm": 1.3 },
+      { "map": "bakurani", "name": "the fifth tower, naming only", "written": "wardogslabs.com prints it as TOWER 5L, flags it as a variant and counts the map as 4 core towers + 1 variant", "otherSide": "wardogs.tools, wardogshub.gg and wardogs-calculator all print five towers with no variant flag, at the same position", "apartKm": 0 },
+      { "map": "bakurani", "name": "the whole place list against the tower layer", "written": "fitted over the five matching names, the hub's own place list is a mirrored and stretched copy of its tower layer: y_place = -1.094 x y_tower + 20.80, residual 0.04 km or less, x apart 0.05 km or less (n=5)", "otherSide": "both sides are inside wardogshub.gg; its tower layer is the one that matches the other three projects", "apartKm": 1.6 }
+    ]
+  },
+  "notYetRecorded": [
+    "Every location that is not a tower. The other seven categories have a name in the filter list and no position recorded.",
+    "Where the three faction bases and their vendors, garages, fuel points and deployment boards sit, and whether all of them exist on all three maps.",
+    "Studio confirmation of the tower set. The 5 / 4 / 3 towers above are community work, cross-checked between projects; no official page publishes a location on any map.",
+    "Which edge the in-game grid numbers its rows from. This page and every community project read here put row 1 at the north edge (wardogslabs.com renders its compass north-up with no rotation); confirm it on the in-game map screen and this line comes out."
+  ]
+}

@@ -1,0 +1,7 @@
+game,steam_appid,accounts_open,read_at_utc,endpoint,page
+WARDOGS,1867240,189299,2026-10-04T00:15:24Z,https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=1867240,https://shooteratlas.com/wardogs-player-count
+Squad,393380,6262,2026-10-04T00:15:24Z,https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=393380,https://shooteratlas.com/squad-player-count
+Foxhole,505460,2077,2026-10-04T00:15:24Z,https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=505460,https://shooteratlas.com/foxhole-player-count
+Hell Let Loose,686810,2561,2026-10-04T00:15:24Z,https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=686810,https://shooteratlas.com/hell-let-loose-player-count
+Arma Reforger,1874880,11285,2026-10-04T00:15:23Z,https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=1874880,https://shooteratlas.com/arma-reforger-player-count
+Rising Storm 2: Vietnam,418460,247,2026-10-04T00:15:24Z,https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=418460,https://shooteratlas.com/rising-storm-2-player-count

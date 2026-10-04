@@ -1,0 +1,55 @@
+{
+  "what": "Valve's own count of accounts with the game open, read from the public Steam Web API endpoint for each app id.",
+  "read_at_utc": "the minute the reading was taken (UTC); one minute for the whole set",
+  "games": [
+    {
+      "game": "WARDOGS",
+      "steam_appid": 1867240,
+      "accounts_open": 189299,
+      "read_at_utc": "2026-10-04T00:15:24Z",
+      "endpoint": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=1867240",
+      "page": "https://shooteratlas.com/wardogs-player-count"
+    },
+    {
+      "game": "Squad",
+      "steam_appid": 393380,
+      "accounts_open": 6262,
+      "read_at_utc": "2026-10-04T00:15:24Z",
+      "endpoint": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=393380",
+      "page": "https://shooteratlas.com/squad-player-count"
+    },
+    {
+      "game": "Foxhole",
+      "steam_appid": 505460,
+      "accounts_open": 2077,
+      "read_at_utc": "2026-10-04T00:15:24Z",
+      "endpoint": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=505460",
+      "page": "https://shooteratlas.com/foxhole-player-count"
+    },
+    {
+      "game": "Hell Let Loose",
+      "steam_appid": 686810,
+      "accounts_open": 2561,
+      "read_at_utc": "2026-10-04T00:15:24Z",
+      "endpoint": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=686810",
+      "page": "https://shooteratlas.com/hell-let-loose-player-count"
+    },
+    {
+      "game": "Arma Reforger",
+      "steam_appid": 1874880,
+      "accounts_open": 11285,
+      "read_at_utc": "2026-10-04T00:15:23Z",
+      "endpoint": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=1874880",
+      "page": "https://shooteratlas.com/arma-reforger-player-count"
+    },
+    {
+      "game": "Rising Storm 2: Vietnam",
+      "steam_appid": 418460,
+      "accounts_open": 247,
+      "read_at_utc": "2026-10-04T00:15:24Z",
+      "endpoint": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=418460",
+      "page": "https://shooteratlas.com/rising-storm-2-player-count"
+    }
+  ],
+  "note": "One number, one minute. These are readings, not averages, and they move; re-read the endpoint before you quote one."
+}
