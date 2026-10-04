@@ -73,3 +73,10 @@ source link and says what the number cannot tell you.
   price into another currency produces a number nobody can pay.
 - The map positions are **community readings of game files**, not the studio's
   data, and agreement between projects is not confirmation.
+
+## Licence
+
+The data and the script in this repository are published under the
+[Creative Commons Attribution 4.0 International licence](https://creativecommons.org/licenses/by/4.0/)
+(CC BY 4.0): use them for anything, including commercially, and credit
+Shooter Atlas with a link back to the page the figure came from.
